@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<aiml version="1.0.1">
+
+    <!-- Questions -->
+        <!-- HI -->
+            <category>
+                <pattern>HI</pattern>
+                <template>
+                    <srai>ANSWER HI</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>HELLO</pattern>
+                <template>
+                    <srai>ANSWER HI</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>HI *</pattern>
+                <template>
+                    <srai>ANSWER HI</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>HELLO *</pattern>
+                <template>
+                    <srai>ANSWER HI</srai>
+                </template>
+            </category>
+        <!-- HI -->
+
+        <!-- NICE TO MEET YOU -->
+            <category>
+                <pattern>NICE TO MEET *</pattern>
+                <template>
+                    Nice to meet you too :) How can I help you?
+                </template>
+            </category>
+        <!-- NICE TO MEET YOU -->
+
+        <!-- WHO ARE YOU -->
+            <category>
+                <pattern>WHO ARE U</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>WHO ARE YOU</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>WHAT ARE YOU</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>WHAT ARE U</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>WHO ARE YOU *</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>WHO ARE U *</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>WHAT ARE U *</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>WHAT ARE YOU *</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>TELL ME ABOUT YOURSELF</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>TELL ME ABOUT YOURSELF *</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>TELL ME * YOURSELF *</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>TELL ME * YOURSELF</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>DESCRIBE YOURSELF</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+            <category>
+                <pattern>DESCRIBE YOURSELF *</pattern>
+                <template>
+                    <srai>ANSWER WHO ARE YOU</srai>
+                </template>
+            </category>
+        <!-- WHO ARE YOU -->
+    <!-- Questions -->
+
+    <!-- Default Answers -->
+        <category>
+            <pattern>ANSWER HI</pattern>
+            <template>
+                <random>
+                    <li>Hi :)</li>
+                    <li>Hello</li>
+                    <li>Hey there :)</li>
+                    <li>Hello, How can I help you?</li>
+                </random>
+            </template>
+        </category>
+        <category>
+            <pattern>ANSWER WHO ARE YOU</pattern>
+            <template>
+                I'm a bot based on AIML implemented in python. You can call me Bob!
+            </template>
+        </category>
+        <category>
+            <pattern>*</pattern>
+            <template>Sorry, I can't understand :(</template>
+        </category>
+    <!-- Default Answers -->
+
+</aiml>

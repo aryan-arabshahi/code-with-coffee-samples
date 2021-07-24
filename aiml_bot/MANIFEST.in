@@ -1,0 +1,2 @@
+recursive-include aiml_bot/react_app/build *
+include aiml_bot/database.xml
