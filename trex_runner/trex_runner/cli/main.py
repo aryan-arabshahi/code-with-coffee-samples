@@ -17,7 +17,6 @@ WINDOW_DETAILS = {
 def main():
     screen = mss()
     while True:
-        count = 0
         cropped_screen_shot = screen.grab(WINDOW_DETAILS)
         cropped_image = np.array(Image.frombytes(
             'RGB',
