@@ -26,8 +26,8 @@ def main():
 
         gray_image = cv2.cvtColor(cropped_image[220:260, 110:270], cv2.COLOR_BGR2GRAY)
 
-        th, threshed = cv2.threshold(gray_image, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU) 
-        contours = cv2.findContours(threshed, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)[-2] 
+        th, threshed = cv2.threshold(gray_image, 0, 255, cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)
+        contours = cv2.findContours(threshed, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)[-2]
 
         if len(contours) >= 1:
             keyboard.press('space')
