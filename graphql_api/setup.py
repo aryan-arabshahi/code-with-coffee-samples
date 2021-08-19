@@ -5,7 +5,7 @@ PROJECT_NAME = 'graphql_api'
 PROJECT_VERSION = '1.0.0'
 PROJECT_ENTRY_POINTS = """
 [console_scripts]
-graphql_api = graphql_api.cli.main:main
+graphql-api = graphql_api.cli.main:main
 """
 
 
@@ -35,6 +35,7 @@ setuptools.setup(
     author="Aryan Arabshahi",
     author_email="aryan.arabshahi.programmer@gmail.com",
     description="The GraphQL API sample.",
+    packages=setuptools.find_packages(),
     install_requires=read_requirements(),
     python_requires='>=3.6',
 )
